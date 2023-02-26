@@ -1,5 +1,7 @@
 # latex-yearly-planner
 
+NOTE: I did none of this - it is a fork from kudrykv
+
 PDF planner designed for e-ink devices.
 
 See [discussions](https://github.com/kudrykv/latex-yearly-planner/discussions) for available planners and their variations.
@@ -22,13 +24,8 @@ The following was tested with [POP_OS 22.04.1 LTS](https://pop.system76.com/) un
 ### Install Dependencies
 1. [Go Language](https://go.dev/dl/)
 2. [LaTex](https://miktex.org/download) & [PDFLaTeX](https://www.latex-project.org/get/)
-3. From the project directory, run the following command after updating
- 'PLANNER_YEAR' below. This should generate the PDF in the 'out' directory.
-<code>PLANNER_YEAR=2022 \
-PASSES=1 \
-CFG="cfg/base.yaml,cfg/template_breadcrumb.yaml,cfg/sn_a5x.breadcrumb.default.yaml" \
-NAME="sn_a5x.breadcrumb.default" \
-./single.sh</code> 
+3. Note by VEronica: I used the bash build.sh command so to set the year: "bash build.sh 2023"
+4. Note by VEronica: For windows users, just give up trying and use WSL to set up ubuntu on your windows machine, install git on WSL ubuntu, pull to your ubuntu drive and pretend you have a linux machine. It just works.
 
 [Source](https://github.com/kudrykv/latex-yearly-planner/discussions/34#discussioncomment-3128344)
 
